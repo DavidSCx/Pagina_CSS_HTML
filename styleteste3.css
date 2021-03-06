@@ -1,0 +1,74 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("imagem/background-preto-fundo.jpg");
+}
+.item1 { grid-area: header;
+color: aliceblue; }
+.item2 { grid-area: menu;
+  }
+.item3 { grid-area: main;
+color: aliceblue;
+text-align: justify; }
+.item4 { grid-area: right;
+  color: aliceblue; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item6{
+    margin-left: 700px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: aliceblue;
+}
+.item7{
+  grid-area: menu;
+  font-size: 30px;
+  margin-left: 700px;
+}
+.item8{
+  grid-area: menu;
+  font-size: 30px;
+ 
+}
+ol {
+          
+  
+  padding: 20px;
+}
+
+ul {
+    
+  
+  padding: 20px;
+}
+
+ol li {
+    display: inline;
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 400px;
+}
+
+ul li {
+  display: inline;
+  background: #cce5ff;
+  padding: 5px;
+  margin-left: 400px;
+}
